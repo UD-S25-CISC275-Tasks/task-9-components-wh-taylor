@@ -10,8 +10,8 @@ export function StartAttempt(): React.JSX.Element {
     }
     return <div>
         <Button disabled={isActive || attempts == 0} onClick={startQuiz}>Start Quiz</Button>
-        <Button disabled={!isActive} onClick={() => setActive(false)}>Stop Quiz</Button>
-        <Button disabled={isActive} onClick={() => setAttempts(attempts + 1)}>Mulligan</Button>
+        <Button disabled={!isActive} onClick={() => {setActive(false)}}>Stop Quiz</Button>
+        <Button disabled={isActive} onClick={() => {setAttempts(attempts + 1)}}>Mulligan</Button>
         <p>Attempts: {attempts}</p>
     </div>;
 }

@@ -52,8 +52,8 @@ export function CycleHoliday(): React.JSX.Element {
     const [holiday, setHoliday] = useState<Holiday>("St. Patrick's Day");
 
     return <div>
-        <Button onClick={() => setHoliday(advanceAlphabet(holiday))}>Advance by Alphabet</Button>
-        <Button onClick={() => setHoliday(advanceYear(holiday))}>Advance by Year</Button>
+        <Button onClick={() => {setHoliday(advanceAlphabet(holiday))}}>Advance by Alphabet</Button>
+        <Button onClick={() => {setHoliday(advanceYear(holiday))}}>Advance by Year</Button>
         <span>
             <p>Holiday: {getEmoji(holiday)}</p>
         </span>
